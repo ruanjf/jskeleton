@@ -16,13 +16,6 @@
 
 	<dependencies>
 
-		<!-- 事件驱动框架 -->
-		<dependency>
-			<groupId>com.netflix.rxjava</groupId>
-			<artifactId>rxjava-core</artifactId>
-			<version>0.10.0</version>
-		</dependency>
-
 		<!-- 工具类 -->
 		<dependency>
 			<groupId>com.google.guava</groupId>
