@@ -13,7 +13,6 @@ import com.rongji.jskeleton.core.eventListen.Event;
 import com.rongji.jskeleton.core.eventListen.EventListen;
 import com.rongji.jskeleton.core.eventListen.Listen;
 import com.rongji.jskeleton.core.eventListen.Listener;
-import com.rongji.jskeleton.core.tools.Assert;
 
 @RunWith(JUnit4.class)
 public class ArticleSaveEventListenTest {
