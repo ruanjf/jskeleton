@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.rongji.jskeleton</groupId>
-	<artifactId>${project.artifactId}</artifactId>
+	<artifactId>jskeleton-all</artifactId>
 	<version>0.0.1</version>
 	<packaging>pom</packaging>
 
@@ -12,7 +12,6 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.artifactId>jskeleton-all</project.artifactId>
 	</properties>
 	
 	<distributionManagement>
@@ -64,6 +63,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+	
 	<build>
 		<finalName>${project.artifactId}</finalName>
 		<pluginManagement>

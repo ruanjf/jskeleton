@@ -7,14 +7,10 @@
 		<version>0.0.1</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
-	<artifactId>${project.artifactId}</artifactId>
+	<artifactId>jskeleton-web</artifactId>
 	<packaging>jar</packaging>
 
 	<name>${project.artifactId}</name>
-	
-	<properties>
-		<project.artifactId>jskeleton-web</project.artifactId>
-	</properties>
 	
 	<dependencies>
 		<dependency>
@@ -26,6 +22,16 @@
 	
 	<build>
 		<finalName>${project.artifactId}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+			</plugin>
+		</plugins>
 	</build>
 	
 </project>
