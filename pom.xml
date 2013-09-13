@@ -22,13 +22,6 @@
 		</repository>
 	</distributionManagement>
 	
-	<distributionManagement>
-		<repository>
-			<id>rongji</id>
-			<url>http://192.168.14.90:8081/nexus/content/repositories/rongji</url>
-		</repository>
-	</distributionManagement>
-	
 	<modules>
         <module>jskeleton-core</module>
         <module>jskeleton-web</module>
