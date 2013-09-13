@@ -28,6 +28,18 @@
 
 	<dependencyManagement>
 		<dependencies>
+		
+			<!-- 添加自身依赖 -->
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>jskeleton-core</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>jskeleton-web</artifactId>
+				<version>${project.version}</version>
+			</dependency>
 	
 			<!-- 工具类 -->
 			<dependency>
