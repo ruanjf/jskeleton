@@ -2,16 +2,19 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.rongji</groupId>
-		<artifactId>jskeleton</artifactId>
+		<groupId>com.rongji.jskeleton</groupId>
+		<artifactId>jskeleton-all</artifactId>
 		<version>0.0.1</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
-	<artifactId>jskeleton-web</artifactId>
+	<artifactId>${project.artifactId}</artifactId>
 	<packaging>jar</packaging>
 
-	<name>jskeleton-web</name>
-	<url>http://maven.apache.org</url>
+	<name>${project.artifactId}</name>
+	
+	<properties>
+		<project.artifactId>jskeleton-web</project.artifactId>
+	</properties>
 	
 	<dependencies>
 		<dependency>
@@ -20,5 +23,9 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	
+	<build>
+		<finalName>${project.artifactId}</finalName>
+	</build>
 	
 </project>
