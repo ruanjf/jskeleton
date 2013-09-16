@@ -3,6 +3,13 @@ package com.rongji.jskeleton.core.tools;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 
+/**
+ * 获得范型参数的类型
+ *
+ * @author rjf
+ * @since 0.1 2013-9-14
+ *
+ */
 public class GenericsUtils {
 	/**  
 	 * 通过反射,获得定义Class时声明的父类的范型参数的类型.  
