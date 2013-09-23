@@ -11,7 +11,8 @@
 
 	<!-- enable processing of annotations such as @Autowired and @Configuration -->
 	<context:annotation-config />
-	<context:component-scan base-package="com.rongji.jskeleton.core.module" />
+	<!-- <context:component-scan base-package="com.rongji.jskeleton.core.module.ModuleConfiguration" /> -->
+	<bean class="com.rongji.jskeleton.core.module.ModuleConfiguration" />
 	
 	<!-- ========================= GENERAL DEFINITIONS ========================= -->
 	<!-- Configurer that replaces ${...} placeholders with values from properties files -->

@@ -12,14 +12,14 @@ import com.rongji.jskeleton.core.tools.ToolService;
 
 
 @RunWith(JUnit4.class)
-public class ModuleConfigTest {
+public class ModuleConfigurationTest {
 
 	/**
 	 * 通常的测试
 	 */
 	@Test
 	public void general() {
-		ApplicationContext ctx = new AnnotationConfigApplicationContext(ModuleConfig.class);
+		ApplicationContext ctx = new AnnotationConfigApplicationContext(ModuleConfiguration.class);
 		SpringContextHolder sch = ctx.getBean(SpringContextHolder.class);
 		
 		print(sch);
@@ -33,9 +33,9 @@ public class ModuleConfigTest {
 	/**
 	 * 未获取bean时取值
 	 */
-//	@Test
+	@Test
 	public void staticFunc() {
-		new AnnotationConfigApplicationContext(ModuleConfig.class);
+		new AnnotationConfigApplicationContext(ModuleConfiguration.class);
 		print();
 	}
 	
@@ -53,9 +53,9 @@ public class ModuleConfigTest {
 		System.out.println(ctx.getBean(ModuleService.class).getPropTest());
 	}
 	
-//	@Test
+	@Test
 	public void prop() {
-		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(ModuleConfig.class);
+		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(ModuleConfiguration.class);
 		System.out.println(ctx.getBean(ModuleService.class).getPropTest());
 	}
 	
